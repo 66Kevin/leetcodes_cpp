@@ -5,22 +5,16 @@ using namespace std;
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-
-        int n = nums.size();
-        if(n==0){
-            return 0;
-        } 
-
-        // 快慢指针
-        int slow;
-        for (int fast = 0; fast < nums.size(); fast++){
-            if (nums[fast] != nums[slow]){
-                nums[++slow] = nums[fast];
+        if(nums.size() == 0){return 0;}
+        int slow = 0, fast = 1;
+        while(fast < nums.size()){
+            if(nums[fast] != nums[slow]){
+                slow = slow + 1;
+                nums[slow] = nums[fast];
             }
+            fast = fast + 1;
         }
-        //返回曼指针后一位
         return slow + 1;
-
     }
 };
 
