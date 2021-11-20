@@ -26,4 +26,6 @@ public:
 
 int main(){
     Solution sol;
+    int res = sol.lengthOfLastWord("a");
+    cout << res << endl;
 }
