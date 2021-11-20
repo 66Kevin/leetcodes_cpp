@@ -23,3 +23,7 @@ public:
         return res;
     }
 };
+
+int main(){
+    Solution sol;
+}
