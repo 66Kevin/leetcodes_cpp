@@ -1,4 +1,6 @@
 #include<unordered_map>
+#include <iostream>
+using namespace std;
 
 class Solution {
 public:
@@ -13,7 +15,7 @@ public:
     }
 
     bool isHappy(int n) {
-        unordered_map<int> hash;    //将每个答案存进哈希表，方便后续判断
+        unordered_map<int, int> hash;    //将每个答案存进哈希表，方便后续判断
         int t=find(n);
         while(t>1){ 
             if(hash.count(t))   //判断此结果是否在哈希表中出现过
