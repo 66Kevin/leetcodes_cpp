@@ -1,6 +1,5 @@
 #include<unordered_map>
 #include <iostream>
-#include <vector>
 using namespace std;
 
 class Solution {
@@ -12,6 +11,10 @@ public:
             hashmap[ch] +=1;
         }
 
+        for (auto it = hashmap.begin(); it != hashmap.end(); ++it){ 
+            cout << it->first << endl;
+        }
+
         for(int i = 0; i < s.size(); ++i){
             if(hashmap[s[i]]==1){
                 return i;
@@ -20,3 +23,10 @@ public:
         return -1;
     }
 };
+
+int main(){
+    string tmp = "leetcode";
+    Solution sol;
+    int res = sol.firstUniqChar(tmp);
+    cout << res << endl;
+}
