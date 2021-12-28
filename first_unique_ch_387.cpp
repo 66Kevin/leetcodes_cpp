@@ -12,7 +12,7 @@ public:
         }
 
         for (auto it = hashmap.begin(); it != hashmap.end(); ++it){ 
-            cout << it->first << endl;
+            cout << char(it->first) << endl;
         }
 
         for(int i = 0; i < s.size(); ++i){
