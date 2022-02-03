@@ -16,7 +16,7 @@ public:
         if(right > left){
             return;
         }
-        if(right == left == n){
+        if(right == left && right == n && left == n){ //不能连续等于: right==left==n
             result.push_back(str);
             return;
         }
