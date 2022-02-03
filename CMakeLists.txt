@@ -3,4 +3,4 @@ project(leetcodes_cpp)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(leetcodes_cpp single_num_136.cpp)
+add_executable(leetcodes_cpp generate_parenthese_22.cpp)
