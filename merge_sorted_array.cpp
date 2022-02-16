@@ -14,7 +14,7 @@ public:
         int cur;
         while (p1 < m || p2 < n) {
             if (p1 == m) {
-                cur = nums2[p2++];
+                cur = nums2[p2++]; // 整数数组没法push_back()，只能通过下表索引来添加
             } else if (p2 == n) {
                 cur = nums1[p1++];
             } else if (nums1[p1] < nums2[p2]) {
